@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+ 
+  /* Calculator container styling */
+  section {
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+    background: #151515;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(190, 39, 39, 0.5);
+    text-align: right;
+    flex-direction: column; 
+  } 
+  
+  #expression {
+    font-size: 1.2rem;
+    min-height: 30px;
+    color: #bbb;
+  }
+  
+  #result {
+    font-size: 2rem;
+    font-weight: bold;
+    min-height: 40px;
+    color: rgb(230, 230, 234);
+  }
+  
+  /* Buttons container styling */
+  section#input {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: #0c0c0c;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+  }
+  
+  /* General button styling */
+  button {
+    background: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  
+  /* Light buttons (e.g., clear, negate, mod) */
+  button.light {
+    background: #e0e0e0;
+  }
+  
+  button.light:hover {
+    background: #df8d12;
+  }
+  
+  /* Dark buttons (e.g., numbers, decimal, backspace) */
+  button.dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  button.dark:hover {
+    background: #444;
+  }
+  
+  /* Blue buttons (e.g., operators, submit) */
+  button.blue {
+    background: #007bff;
+    color: white;
+  }
+  
+  button.blue:hover {
+    background: #0056b3;
+  }
+  
+  /* Equal button styling */
+  button[data-action="submit"] {
+    background: #28a745;
+    color: white;
+  }
+  
+  button[data-action="submit"]:hover {
+    background: #218838;
+  }
